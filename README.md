@@ -13,14 +13,16 @@ To schedule in ***cron*** do the following:
  2. go to the last line of the file or the first empty one
  3. add the following lines to run the script every 10 mins everyday
 		`#Schedule RPi-TMon`
-
+		
+		*/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt
+    enter code here
 
 The "**-noconsole**" switch will prevent to display the console messages and will presever Cron from failing launching the command*
 
-> REMINDER: remember to modify the SMTP parameters otherwise you won't > get any email, unless you're Donald Trump
+> ***REMINDER**: remember to modify the SMTP parameters otherwise you won't get any email, unless you're Donald Trump*
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MDU4NTE2OV19
+eyJoaXN0b3J5IjpbLTIwMDkzMDYzMzddfQ==
 -->
