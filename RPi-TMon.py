@@ -1,6 +1,6 @@
 #Raspberry-Pi Temperature Monitoring (RPi-TMon) - v1.0.
 ##Copyright (C) 2020 Alessio Rossini <alessior@live.com>
-#Original source code available at 
+#Original source code available at https://github.com/AxReds/RPi-TMon
 #
 #This program is free software; you can redistribute it and/or modify it under
 #the terms of the GNU General Public License as published by the Free Software Foundation;
