@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-#to make the script executable added the above line (a shebang a # + a !)
+#to make the script executable added the above line (a shebang: a # + a !)
 #read the readme file for details
 
 #Raspberry-Pi Temperature Monitoring (RPi-TMon) - v1.0.
@@ -21,7 +21,6 @@
 #
 #This improved version starts from the idea of Alexander Bilz https://gist.github.com/lxndrblz
 #Original source code at https://gist.github.com/lxndrblz/27e6ca08363bbc8be994a2f7b1a9d523
-#stocasso
  
 
 #Include libraries
