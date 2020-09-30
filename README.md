@@ -14,17 +14,14 @@ The script can be executed as a *bash* console or scheduTo schedule in ***cron**
  3. add the following lines to run the script every 10 mins everyday
 		`#Schedule RPi-TMon`
 		
-		**/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt*
- 
+		*/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt 
   
-  
-
-The "**-noconsole**" switch will prevent to display the console messages and will presever Cron from failing launching the command*
+  The "**-noconsole**" switch will prevent to display the console messages and will presever Cron from failing launching the command*
 
 > ***REMINDER**: remember to modify the SMTP parameters otherwise you won't get any email, unless you're Donald Trump*
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg3NTE3OTYwXX0=
+eyJoaXN0b3J5IjpbLTEyMjIxMjgxNDBdfQ==
 -->
