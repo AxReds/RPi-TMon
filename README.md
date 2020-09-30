@@ -20,6 +20,7 @@ To schedule in ***cron*** do the following:
  3. add the following two lines to ***crontab*** to run the script every 10 mins everyday
  
 	 `#Schedule RPi-TMon`
+
 	 `*/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt` 
   
 
