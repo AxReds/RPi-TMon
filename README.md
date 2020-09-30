@@ -17,10 +17,9 @@ To schedule in ***cron*** do the following:
 
  1. `sudo crontab -e`  <*if it is the first time you run it, choose your editor*>
  2. go to the last line of the file or the first empty one
- 3. add the following lines to run the script every 10 mins everyday
- `#Schedule RPi-TMon`
-	  
-	`*/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt` 
+ 3. add the following two linelines to run the script every 10 mins everyday
+	 `#Schedule RPi-TMon`
+	 `*/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt` 
   
 
 The "**-noconsole**" switch will prevent to display the console messages and will presever Cron from failing launching the command
@@ -30,6 +29,6 @@ The "**-noconsole**" switch will prevent to display the console messages and wil
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ4OTk1MjI4LDEwMTY2MjM1MTQsMTA3MD
-M3Mjc5XX0=
+eyJoaXN0b3J5IjpbLTExODA3OTczMzgsMTAxNjYyMzUxNCwxMD
+cwMzcyNzldfQ==
 -->
