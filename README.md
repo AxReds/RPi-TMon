@@ -14,7 +14,8 @@ To run it as a ***bash*** console command, ensure to add execute attribute to th
 ```
 
 then simply run the command `$ ./RPi-TMon.py`
-To schedule in ***cron*** do the following:
+
+To schedule in ***cron*** execute the following commands:
 
  1. `sudo crontab -e`  <*if it is the first time you run it, choose your editor*>
  2. go to the last line of the file or the first empty one
@@ -24,15 +25,19 @@ To schedule in ***cron*** do the following:
  	#Schedule RPi-TMon
  	*/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt
  ```
-  
+  4. save and exit
 
-The "**-noconsole**" switch will prevent to display the console messages and will presever Cron from failing launching the command
+
+To verify that the script has been executed at least one, run this command:
+
+ 	$ tail -f /var/log/syslog | grep RPi-TMon.py
+
+in case of errors, the output will be saved into `/home/pi/log_RPi-TMon.txt`  
+
+
+The "**-noconsole**" switch will prevent to display the console messages and will presever Cron from failing launching the command  
+
+
 
 > ***REMINDER**: remember to modify the SMTP parameters otherwise you won't get any email, unless you're Donald Trump*
 
-
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDg3MjYxMzAsMTczMjk4NTk0NiwtMT
-E4MDc5NzMzOCwxMDE2NjIzNTE0LDEwNzAzNzI3OV19
--->
