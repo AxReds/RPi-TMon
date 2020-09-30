@@ -1,3 +1,7 @@
+#!/usr/bin/env python2
+#to make the script executable added the above line (a shebang a # + a !)
+#read the readme file for details
+
 #Raspberry-Pi Temperature Monitoring (RPi-TMon) - v1.0.
 ##Copyright (C) 2020 Alessio Rossini <alessior@live.com>
 #Original source code available at https://github.com/AxReds/RPi-TMon
