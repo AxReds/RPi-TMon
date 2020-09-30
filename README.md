@@ -11,7 +11,10 @@ The script can be executed as a ***bash*** console command or scheduled in ***cr
 
 To run it as a ***bash*** console command, ensure to add execute attribute to the file in your directory by running the following command:
 
+```sh
     chmod +x ./RPi-TMon.py  
+```
+
 then simply run the command ./RPi-TMon.py
 To schedule in ***cron*** do the following:
 
