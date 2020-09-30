@@ -1,6 +1,6 @@
 # RPi-TMon
 Raspberry-Pi Temperature Monitoring (RPi-TMon)
-#Copyright (C) 2020 Alessio Rossini <alessior@live.com>
+Copyright (C) 2020 Alessio Rossini <alessior@live.com>
 
 The script will display the currente GPU temperature and if above thresholds will send and alert email and display a message.
 
