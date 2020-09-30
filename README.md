@@ -9,7 +9,12 @@ The script will display the current GPU temperature of your Raspberry-Pi and if 
 
 The script can be executed as a ***bash*** console command or scheduled in ***cron***.
 
-To run it as a
+To run it as a ***bash*** console command, first ensure to add exectute attribute do the following:
+
+    dddd
+    ffff
+    cccc
+
 To schedule in ***cron*** do the following:
  1. `sudo crontab -e`  <*if it is the first time you run it, choose your editor*>
  2. go to the last line of the file or the first empty one
@@ -26,5 +31,5 @@ The "**-noconsole**" switch will prevent to display the console messages and wil
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMDIxNTY1M119
+eyJoaXN0b3J5IjpbMTA3MDM3Mjc5XX0=
 -->
