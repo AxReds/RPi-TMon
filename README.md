@@ -14,8 +14,10 @@ The script can be executed as a *bash* console or scheduTo schedule in ***cron**
  3. add the following lines to run the script every 10 mins everyday
 		`#Schedule RPi-TMon`
 		
-		*/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt
-    enter code here
+		**/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt*
+ 
+  
+  
 
 The "**-noconsole**" switch will prevent to display the console messages and will presever Cron from failing launching the command*
 
@@ -24,5 +26,5 @@ The "**-noconsole**" switch will prevent to display the console messages and wil
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDczMDQ1MTVdfQ==
+eyJoaXN0b3J5IjpbODg3NTE3OTYwXX0=
 -->
