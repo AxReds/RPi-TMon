@@ -33,7 +33,7 @@ import sys
 # initialize constants
 critical = False
 high_Temp = 60 #no higher than 70
-too_high_Temp = 80
+too_high_Temp = 80 #The Raspberry Pi Foundation recommends that the temperature of your Raspberry Pi device should be below 85 degrees Celsius for it to work properly. That’s the maximum limit.
 SMTP_ServerName = "smtp.live.com" # if your using Hotmail
 SMTP_port = 587
 SMTP_account = "donald.trump@whitehouse.gov"
@@ -45,7 +45,7 @@ show_help = "help"
 
 
 #
-#Define a function that returns the current CPU-Temperature with this defined function
+#Define a function that returns the current CPU-Temperature trhough a bash command parsing
 def getCPUtemperature():
     res = os.popen('vcgencmd measure_temp').readline()
     return(res.replace("temp=","").replace("'C\n",""))
@@ -93,25 +93,30 @@ if (temp > high_Temp):
         body = "Warning! The actual temperature is: {} ".format(temp)
  
 
-    # Enter your smtp Server-Connection
+    #
+    #Establish an smtp connection
     server = smtplib.SMTP(SMTP_ServerName, SMTP_port) 
     server.ehlo()
     server.starttls()
     
-    # Login
+    #
+    #Login
     server.login(SMTP_account, SMTP_password)
     
+    #
     #Compose the message
     msg = MIMEText(body)
     msg['Subject'] = subject
     msg['From'] = SMTP_from
     msg['To'] = SMTP_to
 
+    #
     #Send the e-mail
     server.sendmail(SMTP_from, SMTP_to, msg.as_string())
     server.quit()
     
-    #If critical, shut down the pi
+    #
+    #If critical, shut down Raspberry Pi
     if critical:
         #print("Warning! The actual temperature is: %f" %(temp))
         os.popen('sudo halt')
