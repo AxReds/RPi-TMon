@@ -7,7 +7,7 @@
 --- 
 The script will display the current GPU temperature of your Raspberry-Pi and if above thresholds it will send and alert email and/or display a message. 
 
-The script is executable via console or scheduTo schedule in ***cron*** do the following:
+The script can be executed as a *bash* console or scheduTo schedule in ***cron*** do the following:
 
  1. `sudo crontab -e`  <*if it is the first time you run it, choose your editor*>
  2. go to the last line of the file or the first empty one
@@ -24,5 +24,5 @@ The "**-noconsole**" switch will prevent to display the console messages and wil
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTkzOTEyMTBdfQ==
+eyJoaXN0b3J5IjpbLTIxMDczMDQ1MTVdfQ==
 -->
