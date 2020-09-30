@@ -25,7 +25,7 @@ To schedule in ***cron*** do the following:
  ```sh
  	#Schedule RPi-TMon
 	
-	*/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt
+ 	\*/10 * * * * python /home/pi/RPi-TMon.py -noconsole > /home/pi/log_RPi-TMon.txt
 ```
   
 
