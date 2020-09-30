@@ -3,11 +3,11 @@
 # RPi-TMon
 ## Raspberry-Pi Temperature Monitoring (RPi-TMon)
 
-### Copyright (C) 2020 Alessio Rossini <alessior@live.com> 
+### Copyright (C) 2020 - Alessio Rossini <alessior@live.com> 
 --- 
-The script will display the currente GPU temperature and if above thresholds will send and alert email and display a message. 
+The script will display the current GPU temperature of your Raspberry-Pi and if above thresholds it will send and alert email and/or display a message. 
 
-To schedule in ***cron*** do the following:
+The script is executable via console or scheduTo schedule in ***cron*** do the following:
 
  1. `sudo crontab -e`  <*if it is the first time you run it, choose your editor*>
  2. go to the last line of the file or the first empty one
@@ -24,5 +24,5 @@ The "**-noconsole**" switch will prevent to display the console messages and wil
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDkzMDYzMzddfQ==
+eyJoaXN0b3J5IjpbLTE3MTkzOTEyMTBdfQ==
 -->
