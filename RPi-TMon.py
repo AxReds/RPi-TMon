@@ -29,7 +29,7 @@ import sys
 #
 # initialize constants
 critical = False
-high_Temp = 10 #no higher than 70
+high_Temp = 60 #no higher than 70
 too_high_Temp = 80
 SMTP_ServerName = "smtp.live.com" # if your using Hotmail
 SMTP_port = 587
