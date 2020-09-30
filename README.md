@@ -18,3 +18,6 @@ The "-noconsole" switch will prevent to display the console messages and will pr
 
 REMINDER: remember to modify the SMTP parameters otherwise you won't get any email, unless you're Donald Trump
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0OTk0MTEyMDBdfQ==
+-->
