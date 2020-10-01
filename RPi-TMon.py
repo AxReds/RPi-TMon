@@ -111,9 +111,9 @@ if len(sys.argv) == 1:
 else:
     if str(sys.argv[1]) == show_help:
       print (welcomeMessage \
-            + "\n\nSyntax: RPi-TMon.py [commandline_arguments]:\n"\
+            + "\n\nSyntax: %s [commandline_arguments]:\n"\
             "\n\t-noconsole for silent mode & Cron use\n"\
-            "\t-help to show this help\n")
+            "\t-help to show this help\n" %str(sys.argv[0]))
     elif str(sys.argv[1]) == no_console_output: 
       #
       #Non-interactive Mode
