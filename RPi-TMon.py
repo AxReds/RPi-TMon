@@ -1,10 +1,11 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 #to make the script executable added the above line (a shebang: a # + a !)
 #read the readme file for details
 
 #Raspberry-Pi Temperature Monitoring (RPi-TMon) - v1.0.
 #Copyright (C) 2020 Alessio Rossini <alessior@live.com>
 #Original source code available at https://github.com/AxReds/RPi-TMon
+
 #
 #This program is free software; you can redistribute it and/or modify it under
 #the terms of the GNU General Public License as published by the Free Software Foundation;
@@ -45,7 +46,8 @@ SMTP_from = "donald.trump@whitehouse.gov"
 SMTP_to = "joe.biden@am_the_next_president.com"
 no_console_output = "-noconsole"
 show_help = "-help"
-welcomeMessage = "\nRaspberry-Pi Temperature Monitoring (RPi-TMon) - v1.0.\n"\
+version = "v2.0"
+welcomeMessage = "\nRaspberry-Pi Temperature Monitoring (RPi-TMon) - " + version + ".\n"\
     "Copyright (C) 2020 Alessio Rossini <alessior@live.com>\n\n" \
     "\t|This software is free and comes with ABSOLUTELY NO WARRANTY.\n" \
     "\t|You are welcome to redistribute it under the terms of the\n"\
@@ -130,7 +132,7 @@ else:
                     "Critical warning! The CPU temperature is: {} shutting down!!".format(temp), \
                     "Critical warning! The actual CPU temperature is: {} \n\n Shutting down the pi!".format(temp))
                 #os.popen('sudo halt')
-                print "sudo halt"
+                print ("sudo halt")
     else:
         print (welcomeMessage \
             + "\n\nType %s -help to show help." %str(sys.argv[0]))
